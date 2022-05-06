@@ -1,0 +1,107 @@
+.ol-popup {
+    display: none;
+    position: absolute;
+    background-color: #0054a9;
+    padding: 20px;
+    border: 1px solid #cccccc;
+    bottom: 12px;
+    left: -50px;
+}
+
+.ol-popup-closer {
+    font-size: 12px !important;
+    background-color: rgba(255,0,0,0.85) !important;
+    color: #fff !important;
+    width: 17px;
+    height: 17px;
+    line-height: 18px;
+    transition: all ease-in-out 0.25s;
+    -webkit-transition: all ease-in-out 0.25s;
+    -moz-transition: all ease-in-out 0.25s;
+}
+
+    .ol-popup-closer:hover {
+        background-color: rgba(255,0,0,0.9) !important;
+    }
+
+.ol-popup:after, .ol-popup:before {
+    top: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.ol-popup:after {
+    border-top-color: white;
+    border-width: 10px;
+    left: 48px;
+    margin-left: -10px;
+}
+
+.ol-popup:before {
+    border-top-color: #cccccc;
+    border-width: 11px;
+    left: 48px;
+    margin-left: -11px;
+}
+
+.ol-popup-content {
+    min-width: 170px;
+    max-height: 270px;
+    overflow-x: auto;
+    font-size: 11px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    background-color: #fff;
+}
+    .ol-popup-content h4 {
+        font-size: 13px;
+        margin: 0 0 5px;
+        color: #2791b3;
+    }
+    .ol-popup-content br {
+        border-bottom: 1px solid #ddd;
+        content: "A" !important;
+        display: block !important;
+        margin-bottom: 5px !important;
+        padding-bottom: 5px !important;
+    }
+    .ol-popup-content b {
+        padding-right: 5px;
+        color: #222;
+    }
+
+    .ol-popup-closer {
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        font-size: 150%;
+        padding: 0 4px;
+        color: gray;
+        text-decoration: none;
+    }
+
+.ol-popup-closer:after {
+    content: "\2716";
+}
+
+.ol-popup div.infoResult {
+    min-width: 130px;
+}
+
+.ol-popup div.infoResult p {
+    padding: 0.1em;
+    margin: 0;
+}
+
+.ol-popup-content h3 {
+    margin: 0.25em 0;
+}
+
+.ol-popup.marker {
+    margin-bottom: 30px;
+}
